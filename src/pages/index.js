@@ -29,7 +29,7 @@ const IndexPage = ({data}) => {
       {exhibitionList.map((exhibition)=>{
         return <section key={exhibition.id}>
             <div>
-              <p style={{fontWeight: "bold"}}>{exhibition.year}</p>
+              <p className="list-year">{exhibition.year}</p>
               <section className="exhibition-list">
               {exhibition.exhibitionsCopy.map((event)=>{
                   return <Link to={`/exhibitions/${event.slug}`}key={event.id} className="exhibition-thumbnail" >

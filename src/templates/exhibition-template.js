@@ -44,7 +44,8 @@ const ComponentName = ({
             <article className="exhibition-images">
                             <div className="image-container">
                                 {/* image of work*/}
-                            <Image fluid={exhibitionImages[value].fluid}></Image>
+                            <Image fluid={exhibitionImages[value].fluid} style={{ height: "100%", width: "100%", }}
+  imgStyle={{ objectFit: "contain" , objectPosition: "top center"}}></Image>
                             </div>
                             <div className="image-details">
                             <div>

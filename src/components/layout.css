@@ -1,3 +1,11 @@
+/* Font
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -355,41 +363,164 @@ template {
 
   /*****************************************************************************************/
 
+
+/* GENERAL */
+
+html, body {
+font-family: 'Work Sans', sans-serif;
+}
+
+/* Header
+   ========================================================================== */
+header {
+  /*
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  */
+  line-height: 30px;
+  background-color: #fff;
+}
+
+header div {
+  display: flex;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
 .website-layout {
   max-width: 1200px;
   padding: 20px;
 }
+
+main {
+  margin-top: 20px;
+}
+
+.list-year {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+
+/* EXHIBITIONS PAGE */
 .exhibition-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
+}
+.exhibition-list p{
+  margin-block-end: 0;
+}
+.exhibition-thumbnail {
+  width: 225px;
+  max-height: 225px;
+  margin: 0 10px 20px 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
 
-.exhibition-thumbnail {
-  width: 400px;
-  height: 280px;
-  margin: 20px 10px 20px 0px;
+.exhibition-thumbnail p{
+  font-size: 14px;
+  margin-block-start: 0;
 }
+
+.exhibition-thumbnail img{
+  filter: grayscale(100%);
+  opacity: 0.5 !important;
+}
+
+.exhibition-thumbnail img:hover{
+  filter: grayscale(0%);
+  opacity: 1 !important;
+}
+
+.exhibition-thumbnail .gatsby-image-wrapper {
+  background-color: rgb(21, 202, 21);
+}
+
+/*EXHIBITION TEMPLATE */
 
 .exhibition-layout {
   display: flex;
 }
 
 .exhibition-details{
-  width: 30%;
+  width: 25%;
+  margin-right: 30px;
 }
 
 .exhibition-images{
-  width: 70%;
+  width: 75%;
   display: flex;
 }
 
 .image-container{
-  width: 50%;
+  width: 75%;
+  height: 75%;
+  margin-right: 10px;
 }
+
 
 .image-details {
-  width: 50%;
+  width: 25%;
 }
 
+
+/* BOOKS EDITIONS PAGE */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.book-list p{
+  margin-block-end: 0;
+}
+.book-thumbnail {
+  width: 225px;
+  max-height: 225px;
+  margin: 0 10px 20px 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.book-thumbnail p{
+  font-size: 14px;
+  margin-block-start: 0;
+}
+
+.book-thumbnail img{
+  filter: grayscale(100%);
+  opacity: 0.5 !important;
+}
+
+.book-thumbnail img:hover{
+  filter: grayscale(0%);
+  opacity: 1 !important;
+}
+
+.book-thumbnail .gatsby-image-wrapper {
+  background-color: #EA483D;
+}
+.book-list{}
+.book-thumbnail{}
 
 
